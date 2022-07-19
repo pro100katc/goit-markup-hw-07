@@ -73,6 +73,7 @@ p {
   text-decoration: none;
 }
 
+
 .nav__studio {
   color: var(--studio-color);
   font-family: Raleway;
@@ -81,7 +82,7 @@ p {
   text-decoration: none;
 }
 
-.nav-list a {
+.nav__link{
   position: relative;
   display: block;
   padding-top: 32px;
@@ -94,44 +95,33 @@ p {
   text-decoration: none;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.nav-list .item {
+.nav__item {
   margin-right: 50px;
 }
 
-.nav-list .item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.contacts-link a {
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list a:hover {
-  color: var(--accent-color);
-  fill: currentColor;
-}
-
-.link {
+.nav__link{
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus,
-.link.active {
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--active {
   color: var(--accent-color);
 }
 
-.link.active::after {
+.nav__link--active::after {
   content: "";
   display: block;
   position: absolute;
@@ -144,11 +134,20 @@ p {
   border-radius: 4px;
 }
 
-.nav-list .link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
 
+.contacts-link a {
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.contacts-list a:hover {
+  color: var(--accent-color);
+  fill: currentColor;
+}
 .contacts-link {
   display: flex;
   align-items: center;

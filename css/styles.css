@@ -51,14 +51,34 @@ p {
 
 /* -----------HEADER-------------*/
 
-.header {
+.header__container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
+.nav {
   display: flex;
+}
+
+.nav__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: block;
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.nav__studio {
+  color: var(--studio-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .nav-list a {
@@ -128,28 +148,6 @@ p {
   color: var(--accent-color);
 }
 
-.header-nav .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.logo {
-  display: block;
-  color: var(--accent-color);
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.studio {
-  color: var(--studio-color);
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
 
 .contacts-link {
   display: flex;
@@ -322,7 +320,7 @@ p {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color:var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .modal-form {
